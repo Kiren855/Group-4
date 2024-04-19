@@ -16,14 +16,8 @@ function sayHello($name) {
 		<!-- <title>Visual Studio Code Remote :: PHP</title> -->
 	</head>
 	<body>
-		<form action="">
-			<label for="username">Username: </label>
-			<input name="username" type="text">
-			<label for="password">Password: </label>
-			<input name="password" type="password">
-			<button>Login</button>
-		</form>
-		<a href="./view/baiTapTrang73.php">Bài tập trang 73</a>
+		<a style="display: block;" href="./bt/baiTapTrang73.php">Bài tập trang 73</a>
+		<a style="display: block;" href="./bt/baiTapTrang125.php">Bài tập trang 125</a>
 		<?php 
 			
 		?>
