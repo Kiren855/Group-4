@@ -5,24 +5,20 @@
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  *---------------------------------------------------------------------------------------*/
 
-function sayHello($name) {
+function sayHello($name)
+{
 	echo "Hello $name!";
 }
 
 ?>
 
 <html>
-	<head>
-		<title>Visual Studio Code Remote :: PHP</title>
-	</head>
-	<body>
-		<?php 
-		
-		sayHello('K15-N03 2024');
-			
-		phpinfo(); 
-		// Add comment
-			
-		?>
-	</body>
+
+<head>
+	<!-- <title>Visual Studio Code Remote :: PHP</title> -->
+</head>
+
+<body>
+</body>
+
 </html>
