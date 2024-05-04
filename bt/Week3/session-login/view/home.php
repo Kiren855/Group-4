@@ -71,11 +71,10 @@ include('../controller/checkLogin.php');
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="uploadForm" action="../controller/upload.php" method="post"
-                                enctype="multipart/form-data">
-                                File upload:
-                                <input type="file" name="myfile" />
-                            </form>
+                        <form id="uploadForm" action="../controller/upload.php" method="post" enctype="multipart/form-data">
+                            File upload:
+                            <input type="file" name="myfile[]" multiple />
+                        </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
