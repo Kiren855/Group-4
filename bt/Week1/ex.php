@@ -48,13 +48,44 @@ else
 echo str_replace("em", "bé", "Hôm qua em đến trường");
 
 //////////////////////////////////////////////
+// Tách chuỗi thành mảng
 $chuoi = "happy new year";
 $mang_chuoi = explode(" ", $chuoi);
 echo $mang_chuoi[0];
 echo $mang_chuoi[1];
 echo $mang_chuoi[2];
 
-
+/////////////////////////////////////////////
+//Gộp mảng thành chuỗi
 $str = array("happy", "new", "year");
 $chuoi = implode(" ", $str);
 echo $chuoi;
+
+//Bài tập 116
+function normalize($st) {
+    $st = trim($st);
+
+    $st = preg_replace('/\s+/', ' ', $st);
+
+    return $st;
+}
+
+echo normalize("3y4u 98yi4u    5456");
+
+
+/////////////////////////////////
+echo checkdate(11,30,2007);
+
+echo date("d/m/Y h:m:s");
+
+echo date("D-M-Y");
+
+$tuan_sau = time() + (7 * 24 * 60 * 60);
+// 7 days; 24 hours; 60 mins; 60secs
+echo "Hiện tại:". date("Y-m-d") ."<br>";
+
+echo "Tuần sau:" . date("Y-m-d", $tuan_sau) ."<br>";
+
+echo strtotime("now");
+
+

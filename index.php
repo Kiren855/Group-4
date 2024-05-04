@@ -15,10 +15,13 @@ function sayHello($name)
 <html>
 
 <head>
-	<!-- <title>Visual Studio Code Remote :: PHP</title> -->
+    <!-- <title>Visual Studio Code Remcote :: PHP</title> -->
 </head>
 
 <body>
+    ?<?php
+		phpinfo();
+		?>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../upload/MTO\ Astro\ City.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.filename-cell {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
