@@ -1,3 +1,6 @@
+<?php 
+include('../controller/checkLogin.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +29,6 @@
     }
     </style>
     <?php
-    include('../controller/checkLogin.php');
     include('../db/db-connect.php');
 
     $user = $_SESSION['user'];

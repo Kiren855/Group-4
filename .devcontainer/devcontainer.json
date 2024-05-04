@@ -15,7 +15,8 @@
 			"settings": {},
 			"extensions": [
 				"streetsidesoftware.code-spell-checker"
-			]
+			],
+			"postCreateCommand": "docker-php-ext-install mysqli"
 		}
 	},
 

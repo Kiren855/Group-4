@@ -2,7 +2,7 @@
 
 function connectDB()
 {
-    $envFile = __DIR__ . "\..\config\.env";
+    $envFile = __DIR__ . "/../config/.env";
 
     if (!file_exists($envFile)) {
         die("Error: The .env file is not found in directory: " . $envFile);
