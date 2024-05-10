@@ -2,7 +2,7 @@
 
 function connectDB()
 {
-    $envFile = __DIR__ . "/../config/.env";
+    $envFile = __DIR__ . "/../model/.env";
 
     if (!file_exists($envFile)) {
         die("Error: The .env file is not found in directory: " . $envFile);
@@ -20,16 +20,9 @@ function connectDB()
 
     $host = getenv('HOST');
     $user = getenv('USER');
-    $password = '12345678'; //getenv('PASSWORD');
+    $password = getenv('PASSWORD');
     $db = getenv('DB');
 
     $con = mysqli_connect($host, $user, $password, $db);
-    if ($con) {
-        echo "OK";
-    } else {
-        echo "Not Ok";
-    }
     return $con;
 }
-
-connectDB();

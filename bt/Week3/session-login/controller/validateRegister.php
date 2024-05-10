@@ -21,7 +21,7 @@ if ($user === "") {
     echo "<script>window.location.href='../view/register.html';</script>";
 } else {
     $con = connectDB();
-    $query = "SELECT * FROM users WHERE username='$user'";
+    $query = "SELECT * FROM User WHERE TenUser='$user'";
 
     $result = mysqli_query($con, $query);
     if (mysqli_num_rows($result) > 0) {
@@ -29,7 +29,7 @@ if ($user === "") {
         echo "<script>window.location.href='../view/register.html';</script>";
     } else {
         $pass = md5($pass);
-        $query = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
+        $query = "INSERT INTO User(TenUser, MatKhau) VALUES ('$user', '$pass')";
         $insert_result = mysqli_query($con, $query);
         if ($insert_result) {
             echo "<script>alert('Tài khoản đăng ký thành công')</script>";
